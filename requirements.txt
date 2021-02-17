@@ -1,1 +1,1 @@
-airflow=1.10.14
+airflow==1.10.14
