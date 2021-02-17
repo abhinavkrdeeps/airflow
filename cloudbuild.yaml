@@ -5,7 +5,7 @@ steps:
   entrypoint: /bin/sh
   args:
   - -c
-  - 'pip install pytest && pip install airflow && pytest unit_test/*_test.py'
+  - 'pip install pytest && pip install apache-airflow && pytest unit_test/*_test.py'
 - name: gcr.io/google.com/cloudsdktool/cloud-sdk
   id: Deploy
   entrypoint: bash
