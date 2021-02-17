@@ -9,6 +9,7 @@ class TestDagIntegrity(unittest.TestCase):
         self.dagbag = DagBag()
 
     def test_import_dags(self):
+        print(f"inside test_import_dags : {list(self.dagbag)}")
         self.assertFalse(
             len(self.dagbag.import_errors),
             'DAG import failures. Errors: {}'.format(
